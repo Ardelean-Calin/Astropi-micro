@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name MCU_ST_STM32G4)(type Legacy)(uri ${KIPRJMOD}/lib/symbols/MCU_ST_STM32G4.lib)(options "")(descr ""))
+  (lib (name Type-C)(type Legacy)(uri ${KIPRJMOD}/lib/symbols/Type-C.lib)(options "")(descr ""))
+  (lib (name joystick)(type Legacy)(uri ${KIPRJMOD}/lib/symbols/joystick.lib)(options "")(descr ""))
+)
