@@ -763,8 +763,6 @@ F 3 "~" H 6025 1575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6025 1475
-Wire Wire Line
-	6025 1675 6475 1675
 $Comp
 L Regulator_Switching:TPS61090 U?
 U 1 1 5EB65311
@@ -1003,43 +1001,8 @@ Text Notes 7350 2250 0    50   ~ 0
 5V Boost
 Text Label 7650 1475 2    50   ~ 0
 ~LOW_BAT
-Text Label 9625 2700 0    50   ~ 0
-~LOW_BAT
 Text Notes 1925 900  0    50   ~ 0
 Reset circuit
-$Comp
-L Device:CP_Small C3
-U 1 1 5EBB2A9A
-P 1900 4725
-F 0 "C3" H 1988 4771 50  0000 L CNN
-F 1 "100uF" H 1988 4680 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D_Pad2.25x2.55mm_HandSolder" H 1900 4725 50  0001 C CNN
-F 3 "T495D107K010ATE100" H 1900 4725 50  0001 C CNN
-	1    1900 4725
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VBUS #PWR0134
-U 1 1 5EBB3808
-P 1900 4625
-F 0 "#PWR0134" H 1900 4475 50  0001 C CNN
-F 1 "VBUS" H 1915 4798 50  0000 C CNN
-F 2 "" H 1900 4625 50  0001 C CNN
-F 3 "" H 1900 4625 50  0001 C CNN
-	1    1900 4625
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0135
-U 1 1 5EBB3C57
-P 1900 4825
-F 0 "#PWR0135" H 1900 4575 50  0001 C CNN
-F 1 "GND" H 2025 4725 50  0000 C CNN
-F 2 "" H 1900 4825 50  0001 C CNN
-F 3 "" H 1900 4825 50  0001 C CNN
-	1    1900 4825
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0136
 U 1 1 5EBB4A3E
@@ -1076,8 +1039,6 @@ Wire Wire Line
 	9625 2600 10000 2600
 Text Label 10850 2100 2    50   ~ 0
 LCD_~TCS
-Wire Wire Line
-	9625 2700 10000 2700
 Text Label 10925 1200 2    50   ~ 0
 PI_UART_TX
 Text Label 10925 1300 2    50   ~ 0
@@ -1162,10 +1123,8 @@ NoConn ~ 10500 2700
 NoConn ~ 10500 2800
 NoConn ~ 10500 2400
 NoConn ~ 10500 2200
-NoConn ~ 10500 2000
 NoConn ~ 10500 1900
 NoConn ~ 10500 1700
-NoConn ~ 10500 1400
 NoConn ~ 10000 1100
 NoConn ~ 10000 1000
 $Comp
@@ -1188,40 +1147,40 @@ Text Notes 3825 6125 0    50   ~ 0
 $Comp
 L power:GND #PWR0139
 U 1 1 5EB6BD8F
-P 3925 5050
+P 2125 4825
 AR Path="/5EB6BD8F" Ref="#PWR0139"  Part="1" 
 AR Path="/5EB95111/5EB6BD8F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0139" H 3925 4800 50  0001 C CNN
-F 1 "GND" H 3930 4877 50  0000 C CNN
-F 2 "" H 3925 5050 50  0001 C CNN
-F 3 "" H 3925 5050 50  0001 C CNN
-	1    3925 5050
+F 0 "#PWR0139" H 2125 4575 50  0001 C CNN
+F 1 "GND" H 2130 4652 50  0000 C CNN
+F 2 "" H 2125 4825 50  0001 C CNN
+F 3 "" H 2125 4825 50  0001 C CNN
+	1    2125 4825
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C5
 U 1 1 5EB6BD89
-P 3925 4950
+P 2125 4725
 AR Path="/5EB6BD89" Ref="C5"  Part="1" 
 AR Path="/5EB95111/5EB6BD89" Ref="C?"  Part="1" 
-F 0 "C5" H 4017 4996 50  0000 L CNN
-F 1 "10uF" H 4017 4905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3925 4950 50  0001 C CNN
-F 3 "~" H 3925 4950 50  0001 C CNN
-	1    3925 4950
+F 0 "C5" H 2217 4771 50  0000 L CNN
+F 1 "10uF" H 2217 4680 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2125 4725 50  0001 C CNN
+F 3 "~" H 2125 4725 50  0001 C CNN
+	1    2125 4725
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VBUS #PWR0140
 U 1 1 5EB6BD83
-P 3925 4850
+P 2125 4625
 AR Path="/5EB6BD83" Ref="#PWR0140"  Part="1" 
 AR Path="/5EB95111/5EB6BD83" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0140" H 3925 4700 50  0001 C CNN
-F 1 "VBUS" H 3940 5023 50  0000 C CNN
-F 2 "" H 3925 4850 50  0001 C CNN
-F 3 "" H 3925 4850 50  0001 C CNN
-	1    3925 4850
+F 0 "#PWR0140" H 2125 4475 50  0001 C CNN
+F 1 "VBUS" H 2140 4798 50  0000 C CNN
+F 2 "" H 2125 4625 50  0001 C CNN
+F 3 "" H 2125 4625 50  0001 C CNN
+	1    2125 4625
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1576,10 +1535,6 @@ Text Label 9625 1500 0    50   ~ 0
 GPIO27
 Wire Wire Line
 	9625 1500 10000 1500
-Text Label 10925 1600 2    50   ~ 0
-GPIO23
-Wire Wire Line
-	10925 1600 10500 1600
 Wire Notes Line
 	5125 525  5125 4150
 Text Notes 4925 4125 0    50   ~ 0
@@ -1641,7 +1596,34 @@ Wire Notes Line
 Wire Wire Line
 	7275 1475 7650 1475
 Text Notes 6675 5325 0    50   ~ 0
-All Joystick GPIOs & ~LOW_BAT~ have internal pull-up resistors! 
+- All Joystick GPIOs & ~LOW_BAT~ have internal pull-up resistors! 
 Text Notes 6675 5175 0    50   ~ 10
 Important Information
+Text Notes 6675 5425 0    50   ~ 0
+- 10uF input capacitor is maximum tolerated by USB specification
+Text Label 10925 1400 2    50   ~ 0
+~LOW_BAT
+NoConn ~ 10000 2700
+$Comp
+L power:+BATT #PWR?
+U 1 1 5EC81BCC
+P 6375 1675
+AR Path="/5EC81BCC" Ref="#PWR?"  Part="1" 
+AR Path="/5EB95111/5EC81BCC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6375 1525 50  0001 C CNN
+F 1 "+BATT" H 6250 1775 50  0000 C CNN
+F 2 "" H 6375 1675 50  0001 C CNN
+F 3 "" H 6375 1675 50  0001 C CNN
+	1    6375 1675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6475 1675 6375 1675
+NoConn ~ 10500 2000
+Wire Wire Line
+	10925 1600 10500 1600
+Text Label 10925 1600 2    50   ~ 0
+GPIO23
+Wire Wire Line
+	10500 1400 10925 1400
 $EndSCHEMATC
